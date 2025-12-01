@@ -47,10 +47,6 @@ export default class Player extends Entity {
             this.applyForce(delta)
         }
 
-        if (this.game.keyJustPressed('g')) {
-            this._onConsume(20)
-        }
-
         this.applyPhysics(delta)
         this.stayInBounds()
     }
